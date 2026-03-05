@@ -1,0 +1,35 @@
+{
+	"Python Competitive Template": {
+		"prefix": "pytemplate",
+		"body": [
+			"#  ____ _  __",
+			"#  |  _ \\ |/ /",
+			"#  | |_)| ' /   Praneet Kumar",
+			"#  |  __/ . \\   https://www.gitlab.com/praneetk96",
+			"#  |_|  |_|\\_\\",
+			"#",
+			// "#  Codechef's problem code: ${TM_FILENAME_BASE/(.*)/${1:/upper}/}",
+			"#  Codechef's problem code: ${TM_FILENAME_BASE}",
+			"#  Date: ${CURRENT_DATE}-${CURRENT_MONTH}-${CURRENT_YEAR}",
+			"",
+			"import sys",
+			"input = sys.stdin.readline",
+			"",
+			// "def solve():",
+			// "    # cook your dish here ${0}",
+			// "    pass",
+			"def solve():",
+			"    ${1:pass}",
+			"",
+			"def main():",
+			"    t = int(input())",
+			"    for _ in range(t):",
+			"        solve()",
+			"",
+			"if __name__ == \"__main__\":",
+			"    main()",
+			""
+		],
+		"description": "Python template for competitive coding"
+	}
+}
