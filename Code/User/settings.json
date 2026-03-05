@@ -1,0 +1,15 @@
+{
+    "workbench.iconTheme": "catppuccin-mocha",
+    "editor.fontFamily": "'JetBrainsMono NFM', Consolas, 'Courier New', monospace",
+    "workbench.productIconTheme": "material-product-icons",
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+    "workbench.preferredLightColorTheme": "Catppuccin Latte"
+}
