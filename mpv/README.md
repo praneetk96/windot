@@ -25,6 +25,28 @@ Most of these scripts are created by other developers — I only use them in my 
   Generates preview thumbnails when seeking through videos.  
   Source: https://github.com/po5/thumbfast
 
+## Modifications
+
+Some scripts are slightly modified so they work better with my setup.
+
+### modernx.lua
+
+I changed the following line to allow the mpv window to automatically resize when the video is rotated.
+
+Original (around line 1514):
+
+```lua
+mp.set_property_bool("auto-window-resize", false)
+```
+
+Modified:
+
+```lua
+mp.set_property_bool("auto-window-resize", true)
+```
+
+This ensures the window resizes correctly when using my `cycle_video_rotate.lua` script.
+
 ## More MPV Scripts
 
 You can discover many more useful scripts here:  
