@@ -1,16 +1,16 @@
 -- Enable any one colorscheme at a time
 
 -- Catppuccin colorscheme
-return {
-    {
-        "catppuccin/nvim",
-        name = "catppuccin",
-        priority = 1000,
-        config = function()
-            vim.cmd.colorscheme "catppuccin"
-        end,
-    }
-}
+-- return {
+--     {
+--         "catppuccin/nvim",
+--         name = "catppuccin",
+--         priority = 1000,
+--         config = function()
+--             vim.cmd.colorscheme "catppuccin"
+--         end,
+--     }
+-- }
 
 -- Dracula colorscheme
 -- return {
@@ -52,13 +52,35 @@ return {
 -- return {
 --     {
 --         "rebelot/kanagawa.nvim",
---         name = "kanagawa",
---         priority = 1000,
 --         config = function()
---             vim.cmd.colorscheme "kanagawa-wave"
+--             require('kanagawa').setup({
+--                 compile = true,
+--                 transparent = false,
+--                 theme = "wave",    -- Load "wave" theme
+--                 background = {     -- map the value of 'background' option to a theme
+--                     dark = "wave", -- try "dragon" !
+--                     light = "lotus"
+--                 },
+--             })
+--             -- setup must be called before loading
+--             vim.cmd("colorscheme kanagawa");
+--         end,
+--         build = function()
+--             vim.cmd("KanagawaCompile");
 --         end,
 --     }
 -- }
+
+-- OneDarkPro colorscheme
+return {
+    {
+        "olimorris/onedarkpro.nvim",
+        priority = 1000, -- Ensure it loads first
+        config = function()
+            vim.cmd("colorscheme onedark")
+        end,
+    },
+}
 
 -- Rose-Pine colorscheme
 -- return {
